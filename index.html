@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/Logo.png">
+    </header>
+    <main>
+        <section>
+        <textarea class="areadetexto_caja" id="texto_encriptar" name="textarea" rows="10" cols="50" placeholder="Ingrese el texto aquí"></textarea>
+        <p class="areadetexto_caja_instrucciones"><img src="images/icono.png"> Solo letras en  minúsculas y sin acentos</p>
+        <div class="botones_encriptar">            
+            <button onclick="btnEncriptar()" class="btn_encriptar">Encriptar</button>
+            <button onclick="btnDesencriptar()" class="btn_desencriptar">Desencriptar</button>
+        </div>
+    </section>
+    <section class="encriptado">
+        <div id="img_leyenda_area_encriptada">
+        <img class="img_inicio" src="images/aluri.png">
+        <h3 class="titulo-area-encriptada">Ningún mensaje fue encontrado</h3>
+
+        </div>
+        <textarea class="mensaje" id="mensaje_encriptado" placeholder="Ingrese el texto que deseé encriptar o desencriptar."></textarea>
+        <button class="btn_copiar" id="btncopiar">Copiar</button>
+                
+       </section>
+    </main>
+    <aside>
+        
+    </aside>
+    <footer>
+        <p class="texto_footer">Creado por Jonathan David Rodriguez Narvaez - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
